@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Morty · Documentación interactiva</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <a class="navbar__brand" href="#" id="home-link">Rick and Morty API</a>
+      <form class="navbar__search" id="search-form">
+        <label for="search-id" class="sr-only">ID del personaje</label>
+        <input id="search-id" type="number" min="1" max="826" placeholder="Buscar por ID (1-826)" required />
+        <button type="submit">Consultar personaje</button>
+      </form>
+    </header>
+
+    <main id="app" class="container" aria-live="polite"></main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
